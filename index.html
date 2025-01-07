@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Links</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente */
+            justify-content: center; /* Centra verticalmente */
+            min-height: 100vh; /* Asegura que el body ocupa toda la altura de la pantalla */
+            margin: 0;
+            background-color: #f4f4f4; /* Un fondo sutil */
+        }
+
+        .contenedor-botones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adaptable a diferentes tamaños de pantalla */
+            grid-gap: 20px; /* Espacio entre botones */
+            max-width: 800px; /* Ancho máximo del contenedor */
+            width: 90%; /* Ocupa el 90% del ancho disponible */
+        }
+
+        .boton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Para que ocupen todo el ancho de la celda del grid */
+            height: 150px;
+            background-color: #fff; /* Fondo blanco */
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            text-decoration: none;
+            color: #333; /* Color de texto oscuro */
+            font-size: 2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+			padding: 20px;
+			box-sizing: border-box;
+        }
+
+        .boton:hover {
+            background-color: #e0e0e0; /* Un gris claro al pasar el ratón */
+            transform: scale(1.05); /* Ligero aumento al pasar el ratón */
+        }
+        .boton:active {
+            transform: scale(0.95); /* Ligera reduccion al clickear */
+        }
+
+        /* Estilos para pantallas más pequeñas */
+        @media (max-width: 600px) {
+            .contenedor-botones {
+                grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>AI Links</h1>
+    <div class="contenedor-botones">
+        <a href="https://huggingface.co/spaces/hysts/ControlNet-v1-1" class="boton">ControlNet 1.1</a>
+        <a href="https://getimg.ai/text-to-image" class="boton">getimg.ai</a>
+        <a href="https://magicstudio.com/es/background-remover/" class="boton">Quitar Fondo</a>
+        <a href="https://vectordad.com/photo-to-outline/" class="boton">Vectorize</a>
+        <a href="https://huggingface.co/spaces/jasperai/Flux.1-dev-Controlnet-Upscaler" class="boton">Flux Upscaler</a>
+	</div>
+
+	</br><hr></br>
+	
+    <h1>AI Video</h1>
+    <div class="contenedor-botones">
+        <a href="https://haiper.ai/" class="boton">Haiper</a>
+        <a href="https://app.pixverse.ai/create" class="boton">PixVerse</a>
+        <a href="https://www.vidu.studio/create/img2video" class="boton">Vidu</a>
+        <a href="https://www.krea.ai/apps/video/v1" class="boton">Krea</a>
+        <a href="https://lumalabs.ai/dream-machine/creations" class="boton">lumalabs</a>
+        <a href="https://www.klingai.com/image-to-video/" class="boton">klingai</a>
+        <a href="https://pika.art/my-library" class="boton">Pika</a>
+	</div>
+	
+</body>
+</html>
+</html>
