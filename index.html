@@ -5,61 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Links</title>
     <style>
+        /* Importar una fuente de Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
         body {
-            font-family: sans-serif;
+            font-family: 'Poppins', sans-serif;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centra horizontalmente */
-            justify-content: center; /* Centra verticalmente */
-            min-height: 100vh; /* Asegura que el body ocupa toda la altura de la pantalla */
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             margin: 0;
-            background-color: #f4f4f4; /* Un fondo sutil */
+            background: linear-gradient(135deg, #667eea, #764ba2); /* Fondo degradado */
+            color: #fff; /* Texto blanco */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
         }
 
         .contenedor-botones {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adaptable a diferentes tamaños de pantalla */
-            grid-gap: 20px; /* Espacio entre botones */
-            max-width: 800px; /* Ancho máximo del contenedor */
-            width: 90%; /* Ocupa el 90% del ancho disponible */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 20px;
+            max-width: 800px;
+            width: 90%;
         }
 
         .boton {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%; /* Para que ocupen todo el ancho de la celda del grid */
+            width: 100%;
             height: 150px;
-            background-color: #fff; /* Fondo blanco */
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Degradado suave */
             border: none;
             border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
             text-decoration: none;
-            color: #333; /* Color de texto oscuro */
-            font-size: 2em;
+            color: #fff; /* Texto blanco */
+            font-size: 1.5em;
             font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
-			padding: 20px;
-			box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            padding: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
         }
 
         .boton:hover {
-            background-color: #e0e0e0; /* Un gris claro al pasar el ratón */
-            transform: scale(1.05); /* Ligero aumento al pasar el ratón */
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Cambio de degradado al pasar el ratón */
+            transform: translateY(-5px); /* Efecto de levitación */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
         }
+
         .boton:active {
-            transform: scale(0.95); /* Ligera reduccion al clickear */
+            transform: scale(0.95); /* Ligera reducción al hacer clic */
         }
 
         /* Estilos para pantallas más pequeñas */
         @media (max-width: 600px) {
             .contenedor-botones {
-                grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .boton {
+                font-size: 1.2em;
+                height: 120px;
             }
         }
-
-
-
     </style>
 </head>
 <body>
@@ -72,10 +91,11 @@
         <a href="https://magicstudio.com/es/background-remover/" class="boton">Remove Background</a>
         <a href="https://vectordad.com/photo-to-outline/" class="boton">Vectorize</a>
         <a href="https://huggingface.co/spaces/jasperai/Flux.1-dev-Controlnet-Upscaler" class="boton">Flux Upscaler</a>
-	</div>
+        <a href="https://ttsmaker.com/" class="boton">TTS Maker</a>
+    </div>
 
-	</br><hr></br>
-	
+    </br><hr></br>
+
     <h1>AI Video</h1>
     <div class="contenedor-botones">
         <a href="https://haiper.ai/" class="boton">Haiper</a>
@@ -85,8 +105,6 @@
         <a href="https://lumalabs.ai/dream-machine/creations" class="boton">lumalabs</a>
         <a href="https://www.klingai.com/image-to-video/" class="boton">klingai</a>
         <a href="https://pika.art/my-library" class="boton">Pika</a>
-	</div>
-	
+    </div>
 </body>
-</html>
 </html>
